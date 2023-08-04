@@ -1,0 +1,133 @@
+:root {
+    /* - Mobile: 375px- Desktop: 1440px */
+    font-family: 'Libre Franklin', sans-serif;
+    --Font-size: 20px;
+
+    /* Primary */
+
+    --Blue: hsl(223, 87%, 63%);
+
+    /* Secondary */
+
+    --second-Blue: hsl(223, 100%, 88%);
+    --Red: hsl(354, 100%, 66%);
+
+    /* Neutral */
+
+    --Gray: hsl(0, 0%, 59%);
+    --Dark-Blue: hsl(209, 33%, 12%);
+}
+body {
+    margin: 0;
+}
+footer img {
+    width:20px;
+}
+#container {
+    margin: 80px auto;
+    width: 1024px;
+    padding: 10px 30px;
+    text-align: center;
+}
+.dash {
+    width: 800px;
+    margin: 20px auto 30px auto;
+
+}
+header {
+    text-align: center;
+}
+header span {
+    color: var(--Gray);
+    font-weight: 300;
+}
+header p { 
+    font-weight: 300;
+}
+
+.state {
+    height: 80px;
+}
+.input {
+    width: 300px;
+    height: 37px;
+    border: 1px solid var(--Gray);
+    border-radius: 20px;
+    padding-left: 20px;
+}
+.state button {
+    margin-left: 10px;
+    width: 180px;
+    height: 40px;
+    border: 1px solid var(--Gray);
+    border-radius: 20px;
+    background-color: var(--Blue);
+    color: white;
+}
+.state button:active{
+    background-color: var(--second-Blue);
+}
+.state button:hover{
+    cursor: pointer;
+}
+.p2 {
+    margin: 6px 300px 0 0;
+    color: var(--Red);
+    font-size: 10px;
+    font-style: italic;
+}
+.disable{
+    display: none;
+}
+.inactive {
+    border: 1px solid var(--Red);
+}
+
+
+.footer-img{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+footer img {
+    border: 1px solid var(--Gray);
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0 8px 0 8px;
+}
+footer p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+@media (max-width: 425px) {
+    #container {
+        width: 425px;
+    }
+    .state button {
+        background-color: blue;
+    }
+    .dash {
+        width: 400px;
+    }
+    .state {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 120px;
+    }
+    .state button{
+        margin: 0;
+        margin-top: 20px;
+        width: 320px;
+    }
+    .p2 {
+        position: absolute;
+        display: inline;
+        width: 200px;
+        margin: 45px 0 10px 0;
+    }
+}
