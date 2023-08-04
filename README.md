@@ -6,7 +6,6 @@
 
 Thanks for checking out this front-end coding challenge.
 
-(https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
 # Front-end Style Guide
 
